@@ -10,6 +10,7 @@ function crearElementos(tempData) {
 
   const titulo = document.createElement("a");
   titulo.textContent = title;
+  //   titulo.href = "google.com";
   titulo.className = "titulo";
 
   const imagen = document.createElement("img");

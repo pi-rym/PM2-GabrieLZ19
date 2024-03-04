@@ -29,4 +29,24 @@ const tempData = [
     poster:
       "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
   },
+  {
+    title: "Pollitos en fuga: el origen de los nuggets",
+    year: 2023,
+    director: "Sam Fell",
+    duration: "1h 41min",
+    genre: ["Infantil", "Comedia"],
+    rate: 6.4,
+    poster:
+      "https://m.media-amazon.com/images/M/MV5BYWQ4MTAwZTgtMGVhNC00ZmI1LTkzYzYtMzE1MzJhZjk3OGM1XkEyXkFqcGdeQXVyMTMzNzIyNDc1._V1_.jpg",
+  },
+  {
+    title: "Super Mario Bros. La película",
+    year: 2023,
+    director: "Aaron Horvath, Michael Jelenic",
+    duration: "1h 32min",
+    genre: ["Aventura", "Comedia"],
+    rate: 7.0,
+    poster:
+      "https://m.media-amazon.com/images/M/MV5BOTJhNzlmNzctNTU5Yy00N2YwLThhMjQtZDM0YjEzN2Y0ZjNhXkEyXkFqcGdeQXVyMTEwMTQ4MzU5._V1_FMjpg_UX1000_.jpg",
+  },
 ];
