@@ -8,12 +8,14 @@ html {
 }
 header {
   background-color: #121111;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 #contenedorNav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
 }
 
 #contenedorNav a img {
