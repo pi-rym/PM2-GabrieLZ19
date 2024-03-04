@@ -1,0 +1,61 @@
+html {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  background-color: #0b090a;
+}
+header {
+  background-color: #121111;
+  position: sticky;
+  width: 100%;
+}
+#contenedorNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#contenedorNav a img {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+}
+#contenedorNav a img:hover {
+  transform: scale(1.1);
+  transition: 2s;
+}
+
+#contenedorNav span {
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(135, 26, 26);
+  font-size: 100px;
+}
+#contenedorLista {
+  display: flex;
+  list-style: none;
+  padding: 20px;
+  margin-right: 10px;
+}
+
+#contenedorLista li {
+  padding: 20px;
+  border-radius: 25px;
+
+  background-color: rgb(86, 26, 26);
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+#contenedorLista li:hover {
+  transition: 2s;
+  transform: scale(1.1);
+  background-color: red;
+}
+
+#contenedorLista li a {
+  text-decoration: none;
+}

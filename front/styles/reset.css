@@ -1,0 +1,63 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+select,
+table,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default font-size and line-height */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Make images and links easier to work with */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Make form elements easier to style */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  margin: 0;
+}
+
+/* Add a smooth scrolling effect */
+html {
+  scroll-behavior: smooth;
+}
