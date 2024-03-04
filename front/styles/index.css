@@ -1,0 +1,32 @@
+#peliculasRecomendadas {
+  margin: 20px;
+  font-weight: bold;
+}
+
+#peliculas {
+  padding: 20px;
+  margin: 20px;
+  width: max-content;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+.contenedorPelis {
+  border-radius: 25px;
+  width: fit-content;
+  background-color: #121111;
+  border: 1px solid rgb(181, 181, 103);
+  padding: 20px;
+  display: grid;
+  justify-items: center;
+}
+
+.titulo {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.poster {
+  width: 200px;
+  height: 200px;
+}

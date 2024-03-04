@@ -8,13 +8,12 @@ html {
 }
 header {
   background-color: #121111;
-  position: sticky;
-  width: 100%;
 }
 #contenedorNav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
 }
 
 #contenedorNav a img {
@@ -37,8 +36,7 @@ header {
 #contenedorLista {
   display: flex;
   list-style: none;
-  padding: 20px;
-  margin-right: 10px;
+  padding: 10px;
 }
 
 #contenedorLista li {
