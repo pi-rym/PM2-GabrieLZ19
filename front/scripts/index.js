@@ -23,12 +23,15 @@ function crearElementos(tempData) {
 
   const director1 = document.createElement("p");
   director1.textContent = director;
+  director1.className = "contenido";
 
   const duracion = document.createElement("p");
   duracion.textContent = duration;
+  duracion.className = "contenido";
 
   const año = document.createElement("p");
   año.textContent = year;
+  año.className = "contenido";
 
   const puntuacion = document.createElement("p");
   puntuacion.textContent = rate;

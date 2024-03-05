@@ -8,38 +8,72 @@
 #peliculas {
   padding: 20px;
   margin: 20px;
-  width: fit-content;
+  width: 1200px;
   height: fit-content;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  text-align: center;
 }
 .contenedorPelis {
-  border-radius: 25px;
-  width: 100%;
-  background-color: #171e24;
-  padding: 20px;
   display: grid;
   justify-items: center;
+  border-radius: 25px;
+  width: 300px;
+  height: 500px;
 }
 
 .titulo {
-  color: rgb(37, 101, 101);
+  display: flex;
+  color: rgb(243, 249, 249);
   font-weight: bold;
-  margin-bottom: 10px;
-}
-.poster {
+  position: absolute;
   width: 200px;
-  height: 200px;
+  transition: 0.5s;
+  padding-top: 10px;
+  opacity: 0;
+}
+.contenedorPelis:hover .titulo {
+  opacity: 1;
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 25px;
 }
 
+.contenedorPelis:hover .poster {
+  opacity: 0.5;
+}
+
 .genero {
+  transition: 0.5s;
   background-color: rgb(94, 59, 94);
   border-radius: 25px;
-  margin: 5px;
   padding: 5px;
+  position: relative;
+  bottom: 180px;
+
+  opacity: 0;
 }
+
+.contenedorPelis:hover .genero {
+  opacity: 1;
+}
+
+.contenido {
+  position: relative;
+  bottom: 170px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.contenedorPelis:hover .contenido {
+  opacity: 1;
+}
+
 .puntuacion {
   background-color: rgb(224, 224, 14);
   border-radius: 100%;
@@ -47,6 +81,13 @@
   font-weight: bold;
   color: #171e24;
   width: 35px;
-  margin: 5px;
   padding: 5px;
+  position: relative;
+  bottom: 165px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.contenedorPelis:hover .puntuacion {
+  opacity: 1;
 }
