@@ -4,10 +4,10 @@ html {
   font-weight: 400;
   font-style: normal;
   color: white;
-  background-color: #0b090a;
+  background-color: #495057;
 }
 header {
-  background-color: #121111;
+  background-color: #212529;
   position: fixed;
   top: 0;
   width: 100%;
@@ -19,21 +19,23 @@ header {
 }
 
 #contenedorNav a img {
+  filter: grayscale(1);
   width: 150px;
   height: 150px;
   padding: 10px;
 }
 #contenedorNav a img:hover {
   transform: scale(1.1);
+  filter: grayscale(0);
   transition: 2s;
 }
 
 #contenedorNav span {
-  font-family: "Pirata One", system-ui;
+  font-family: "Bungee", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: rgb(135, 26, 26);
-  font-size: 100px;
+  color: #6c757d;
+  font-size: 50px;
 }
 #contenedorLista {
   display: flex;
@@ -45,7 +47,7 @@ header {
   padding: 20px;
   border-radius: 25px;
 
-  background-color: rgb(86, 26, 26);
+  background-color: #6c757d;
   margin-right: 10px;
   font-weight: bold;
 }
