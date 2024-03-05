@@ -19,6 +19,7 @@ function crearElementos(tempData) {
 
   const genero = document.createElement("p");
   genero.textContent = genre;
+  genero.className = "genero";
 
   const director1 = document.createElement("p");
   director1.textContent = director;
@@ -31,6 +32,7 @@ function crearElementos(tempData) {
 
   const puntuacion = document.createElement("p");
   puntuacion.textContent = rate;
+  puntuacion.className = "puntuacion";
 
   contenedor.appendChild(titulo);
   contenedor.appendChild(imagen);

@@ -1,6 +1,7 @@
 #peliculasRecomendadas {
   margin-top: 200px;
   margin-left: 40px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -16,18 +17,36 @@
 .contenedorPelis {
   border-radius: 25px;
   width: 100%;
-  background-color: #121111;
-  border: 1px solid rgb(181, 181, 103);
+  background-color: #171e24;
   padding: 20px;
   display: grid;
   justify-items: center;
 }
 
 .titulo {
+  color: rgb(37, 101, 101);
   font-weight: bold;
   margin-bottom: 10px;
 }
 .poster {
   width: 200px;
   height: 200px;
+  border-radius: 25px;
+}
+
+.genero {
+  background-color: rgb(94, 59, 94);
+  border-radius: 25px;
+  margin: 5px;
+  padding: 5px;
+}
+.puntuacion {
+  background-color: rgb(224, 224, 14);
+  border-radius: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: #171e24;
+  width: 35px;
+  margin: 5px;
+  padding: 5px;
 }
