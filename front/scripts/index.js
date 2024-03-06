@@ -1,62 +1,9 @@
-class peliculas {
-  constructor(title, year, director, duration, genre, rate, poster) {
-    this.title = title;
-    this.year = year;
-    this.director = director;
-    this.genre = genre;
-    this.rate = rate;
-    this.poster = poster;
-  }
-}
+const contenedorHTML = document.querySelector("#peliculas");
+contenedorHTML.innerHTML = "";
 
-class repositorio {
-  constructor() {
-    this.pelis = [];
-  }
-  // crearPeliculas(datos) {
-  //   datos.forEach((item) => {
-  //     const pelicula = new peliculas(
-  //       item.title,
-  //       item.year,
-  //       item.director,
-  //       item.duration,
-  //       item.genre,
-  //       item.rate,
-  //       item.poster
-  //     );
-  //     this.pelis.push(pelicula);
-  //   });
-  // }
-
-  crearPeliculas(datos) {
-    datos.forEach((item) => {
-      //recorre los datos de la api
-      const { title, year, director, duration, genre, rate, poster } = item; //destructuring
-      const pelicula = new peliculas(
-        title,
-        year,
-        director,
-        duration,
-        genre,
-        rate,
-        poster
-      );
-      this.pelis.push(pelicula);
-    });
-  }
-
-  obtenerPeliculas() {
-    return this.pelis;
-  }
-}
-
-const repositorioPelis = new repositorio();
-
-$.get("https://students-api.2.us-1.fl0.io/movies", (datos) => {
-  repositorioPelis.crearPeliculas(datos);
-  console.log(repositorioPelis.obtenerPeliculas());
-  mostrarElementos();
-});
+$.get("https://students-api.2.us-1.fl0.io/movies", (datos) =>
+  datos.forEach(crearElementos)
+);
 
 function crearElementos(datos) {
   const { title, year, director, duration, genre, rate, poster } = datos;
@@ -101,16 +48,5 @@ function crearElementos(datos) {
   contenedor.appendChild(año);
   contenedor.appendChild(puntuacion);
 
-  return contenedor;
-}
-
-function mostrarElementos() {
-  const contenedorHTML = document.querySelector("#peliculas");
-  contenedorHTML.innerHTML = "";
-
-  const peliculas = repositorioPelis.obtenerPeliculas();
-
-  const elementos = peliculas.map(crearElementos);
-
-  elementos.forEach((peli) => contenedorHTML.appendChild(peli));
+  contenedorHTML.appendChild(contenedor);
 }
