@@ -18,7 +18,7 @@
 .contenedorPelis {
   display: grid;
   justify-items: center;
-  border-radius: 25px;
+
   width: 300px;
   height: 400px;
 }
@@ -44,7 +44,7 @@
 }
 
 .contenedorPelis:hover .poster {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .genero {
