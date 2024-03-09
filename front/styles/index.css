@@ -6,12 +6,13 @@
 #peliculas {
   padding: 20px;
   margin: 20px;
-  width: 1200px;
+  width: 1220px;
   height: fit-content;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   text-align: center;
+  justify-items: center;
 }
 .contenedorPelis {
   display: grid;
