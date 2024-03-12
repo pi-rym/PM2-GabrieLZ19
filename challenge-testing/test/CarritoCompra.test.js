@@ -1,20 +1,26 @@
 const CarritoCompra = require("../index");
-const carrito = new CarritoCompra();
-const producto = {
-  name: "papas",
-  precio: 100,
-  cantidad: 2,
-};
-
-const producto2 = {
-  name: "gaseosa",
-  precio: 600,
-  cantidad: 1,
-};
-carrito.agregarProducto(producto);
-carrito.agregarProducto(producto2);
 
 describe("La funcion carritoCompra ", () => {
+  let carrito;
+  let producto;
+  let producto2;
+  beforeEach(() => {
+    carrito = new CarritoCompra();
+
+    producto = {
+      name: "papas",
+      precio: 100,
+      cantidad: 2,
+    };
+
+    producto2 = {
+      name: "gaseosa",
+      precio: 600,
+      cantidad: 1,
+    };
+    carrito.agregarProducto(producto);
+    carrito.agregarProducto(producto2);
+  });
   // it("No debe ser nula", () => {
   //   expect(carrito.carrito).toEqual("");
   // });
