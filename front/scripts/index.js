@@ -5,15 +5,15 @@ const axios = require("axios");
 //   datos.forEach(crearCards)
 // );
 
-const fetchData = async () => {
+const obtenerPelis = async () => {
   try {
     const datos = await axios.get("https://students-api.up.railway.app/movies");
     // console.log(datos.data);
-    const pelis = datos.data;
-    pelis.forEach(crearCards);
+    // const pelis = datos.data;
+    datos.data.forEach(crearCards);
   } catch (error) {
-    error.message;
+    alert(error.message);
   }
 };
 
-fetchData();
+obtenerPelis();
