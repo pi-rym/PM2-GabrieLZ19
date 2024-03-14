@@ -3,7 +3,7 @@ const axios = require("axios");
 
 const obtenerPelis = async () => {
   try {
-    const datos = await axios.get("https://students-api.up.railway.app/movies");
+    const datos = await axios.get("http://localhost:3000/movies");
 
     datos.data.forEach(crearCards);
   } catch (error) {
