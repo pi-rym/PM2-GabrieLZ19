@@ -1,16 +1,17 @@
 const axios = require("axios");
 
 class Movies {
-  constructor(title, poster, director) {
+  constructor({ title, year, director, duration, genre, rate, poster }) {
+    if (!title || !poster || !director) {
+      throw new Error("Propiedades requeridas no encontradas");
+    }
     this.title = title;
-    this.poster = poster;
+    this.year = year;
     this.director = director;
-    this.movies = [];
-  }
-
-  async guardarMovies() {
-    const movies = await axios("https://students-api.up.railway.app/movies");
-    return this.movies.push(movies);
+    this.duration = duration;
+    this.genre = genre;
+    this.rate = rate;
+    this.poster = poster;
   }
 }
 
@@ -20,7 +21,8 @@ module.exports = {
       const { data } = await axios(
         "https://students-api.up.railway.app/movies"
       );
-      return data;
+      const movies = data.map((movie) => new Movies(movie));
+      return movies;
     } catch (error) {
       console.log(error.message);
     }
