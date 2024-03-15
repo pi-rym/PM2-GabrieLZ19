@@ -16,6 +16,7 @@
   font-style: normal;
   font-size: 50px;
 }
+
 #contenedorLista li:hover {
   transition: 2s;
   transform: scale(1.1);

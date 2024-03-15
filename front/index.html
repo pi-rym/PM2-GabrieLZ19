@@ -40,13 +40,35 @@
           <a href="index.html"><img src="assets/Img/Logo.png" alt="Logo" /></a>
           <span class="text-light">PirataFlix</span>
           <ul id="contenedorLista" class="navbar-nav me-5 fw-bold">
-            <li class="nav-item rounded-5 mx-3 my-3 p-2 bg-body">
+            <li
+              class="nav-item rounded-5 mx-3 my-3 p-2 bg-body d-flex align-items-center"
+            >
               <a href="index.html">Inicio</a>
             </li>
-            <li class="nav-item rounded-5 mx-3 my-3 p-2 bg-body">
-              <a href="peliculas.html">Peliculas</a>
+            <li class="nav-item dropdown rounded-5 mx-3 my-3 bg-body">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Peliculas</a
+              >
+              <ul
+                class="dropdown-menu dropdown-menu-dark mt-2 px-3"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item rounded-2" href="peliculas.html"
+                    >Añadir pelicula</a
+                  >
+                </li>
+              </ul>
             </li>
-            <li class="nav-item rounded-5 mx-3 my-3 p-2 bg-body">
+            <li
+              class="nav-item rounded-5 mx-3 my-3 p-2 bg-body d-flex align-items-center"
+            >
               <a href="series.html">Series</a>
             </li>
           </ul>
