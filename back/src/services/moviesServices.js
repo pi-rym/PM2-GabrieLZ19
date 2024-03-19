@@ -1,6 +1,7 @@
 const axios = require("axios");
+const movies = require("../models/Movies");
 
-class Movies {
+class pelis {
   constructor({ title, year, director, duration, genre, rate, poster }) {
     if (!title || !poster || !director) {
       throw new Error("Propiedades requeridas no encontradas");
@@ -18,11 +19,15 @@ class Movies {
 module.exports = {
   obtenerMovies: async () => {
     try {
-      const { data } = await axios(
-        "https://students-api.up.railway.app/movies"
-      );
-      const movies = data.map((movie) => new Movies(movie));
-      return movies;
+      // const { data } = await axios(
+      //   "https://students-api.up.railway.app/movies"
+      // );
+      // const movies = data.map((movie) => new pelis(movie));
+      // return movies;
+
+      const peliculas = await movies.find();
+
+      return peliculas;
     } catch (error) {
       console.log(error.message);
     }
