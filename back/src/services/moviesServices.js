@@ -19,15 +19,10 @@ class pelis {
 module.exports = {
   obtenerMovies: async () => {
     try {
-      // const { data } = await axios(
-      //   "https://students-api.up.railway.app/movies"
-      // );
-      // const movies = data.map((movie) => new pelis(movie));
-      // return movies;
-
       const peliculas = await movies.find();
+      const moviesMap = peliculas.map((movie) => new pelis(movie));
 
-      return peliculas;
+      return moviesMap;
     } catch (error) {
       console.log(error.message);
     }
