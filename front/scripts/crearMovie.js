@@ -30,7 +30,6 @@ const formulario = document.querySelector("#formularioPeliculas");
 function limpiarCampos(event) {
   event.preventDefault();
   formulario.reset();
-  alert("campos limpiados");
 }
 
 function crearMovie(event) {

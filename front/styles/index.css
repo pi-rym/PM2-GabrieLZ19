@@ -6,7 +6,6 @@
 #peliculas {
   padding: 20px;
   margin: 20px;
-
   height: fit-content;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -17,7 +16,6 @@
 .contenedorPelis {
   display: grid;
   justify-items: center;
-
   width: 300px;
   height: 400px;
 }
