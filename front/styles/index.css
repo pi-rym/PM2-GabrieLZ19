@@ -6,10 +6,10 @@
 #peliculas {
   padding: 20px;
   margin: 20px;
-  width: 1220px;
+
   height: fit-content;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   text-align: center;
   justify-items: center;
@@ -23,7 +23,6 @@
 }
 
 .titulo {
-  display: flex;
   color: black;
   font-weight: bold;
   position: absolute;
@@ -51,9 +50,10 @@
   background-color: rgb(94, 59, 94);
   border-radius: 25px;
   padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   position: relative;
   bottom: 180px;
-
   opacity: 0;
 }
 
