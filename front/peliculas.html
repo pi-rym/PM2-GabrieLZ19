@@ -74,19 +74,14 @@
 
     <main class="mt-4">
       <section class="mx-3">
-        <form class="row g-3">
+        <form class="row g-3" id="formularioPeliculas">
           <div class="col-md-6">
             <label for="inputTitle" class="form-label">Title</label>
-            <input type="text" class="form-control" id="inputTitle" required />
+            <input type="text" class="form-control" id="inputTitle" />
           </div>
           <div class="col-md-6">
             <label for="inputDirector" class="form-label">Director</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputDirector"
-              required
-            />
+            <input type="text" class="form-control" id="inputDirector" />
           </div>
           <div class="col-12">
             <label for="inputPoster" class="form-label">Poster</label>
@@ -95,32 +90,28 @@
               class="form-control"
               id="inputPoster"
               placeholder="link imagen"
-              required
             />
           </div>
           <div class="col-md-2">
             <label for="inputYear" class="form-label">Year</label>
-            <input type="text" class="form-control" id="inputYear" required />
+            <input type="number" class="form-control" id="inputYear" />
           </div>
           <div class="col-md-2">
             <label for="inputGenero" class="form-label">Genero</label>
-            <input type="text" class="form-control" id="inputGenero" required />
+            <input type="text" class="form-control" id="inputGenero" />
           </div>
           <div class="col-md-2">
             <label for="inputDuration" class="form-label">Duration</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputDuration"
-              required
-            />
+            <input type="text" class="form-control" id="inputDuration" />
           </div>
           <div class="col-md-2">
             <label for="inputRate" class="form-label">Rate</label>
-            <input type="text" class="form-control" id="inputRate" required />
+            <input type="number" class="form-control" id="inputRate" />
           </div>
           <div class="col-8 mt-3">
-            <button class="btn btn-dark" type="reset">Limpiar Campos</button>
+            <button class="btn btn-dark" id="botonResetear">
+              Limpiar Campos
+            </button>
           </div>
           <div class="col-8">
             <button class="btn btn-primary" type="submit">Agregar</button>
@@ -128,5 +119,7 @@
         </form>
       </section>
     </main>
+
+    <script src="public/bundle.js"></script>
   </body>
 </html>

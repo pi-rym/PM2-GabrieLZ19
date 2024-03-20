@@ -1,5 +1,5 @@
 const contenedorHTML = document.querySelector("#peliculas");
-contenedorHTML.innerHTML = "";
+// contenedorHTML.innerHTML = "";
 
 function crearCards(datos) {
   const { title, year, director, duration, genre, rate, poster } = datos;
@@ -44,7 +44,7 @@ function crearCards(datos) {
   contenedor.appendChild(año);
   contenedor.appendChild(puntuacion);
 
-  contenedorHTML.appendChild(contenedor);
+  contenedorHTML?.appendChild(contenedor);
 }
 
 module.exports = crearCards;
