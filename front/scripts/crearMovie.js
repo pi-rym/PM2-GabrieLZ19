@@ -1,3 +1,5 @@
+const axios = require("axios");
+
 function validarMovies({
   title,
   year,
@@ -43,19 +45,16 @@ function crearMovie(event) {
   const rate = document.querySelector("#inputRate").value;
   const poster = document.querySelector("#inputPoster").value;
 
-  const validacion = validarMovies({
-    title,
-    year,
-    director,
-    duration,
-    genre,
-    rate,
-    poster,
-  });
+  const pelicula = { title, year, director, duration, genre, rate, poster };
+
+  const validacion = validarMovies(pelicula);
 
   if (validacion) return alert(validacion);
 
-  return alert("Pelicula agregada");
+  axios
+    .post("http://localhost:3000/movies", pelicula)
+    .then(() => alert("Pelicula creada"))
+    .catch((error) => alert("Error al crear la pelicula"));
 }
 
 module.exports = { limpiarCampos, crearMovie };
