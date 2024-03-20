@@ -18,13 +18,16 @@ class pelis {
 
 module.exports = {
   obtenerMovies: async () => {
-    try {
-      const peliculas = await movies.find();
-      const moviesMap = peliculas.map((movie) => new pelis(movie));
+    const peliculas = await movies.find();
+    const moviesMap = peliculas.map((movie) => new pelis(movie));
 
-      return moviesMap;
-    } catch (err) {
-      throw new Error(err.message);
-    }
+    return moviesMap;
+  },
+
+  postMovies: async (movie) => {
+    const nuevaPeli = new movies(movie);
+    const guardarPeli = await nuevaPeli.save();
+
+    return guardarPeli;
   },
 };
