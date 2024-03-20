@@ -41,7 +41,7 @@
             >
               <a href="index.html">Inicio</a>
             </li>
-            <li class="nav-item dropdown rounded-5 mx-3 my-3 bg-body">
+            <li class="nav-item dropdown rounded-5 mx-3 my-3 px-2 bg-body">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -77,11 +77,16 @@
         <form class="row g-3">
           <div class="col-md-6">
             <label for="inputTitle" class="form-label">Title</label>
-            <input type="text" class="form-control" id="inputTitle" />
+            <input type="text" class="form-control" id="inputTitle" required />
           </div>
           <div class="col-md-6">
             <label for="inputDirector" class="form-label">Director</label>
-            <input type="text" class="form-control" id="inputDirector" />
+            <input
+              type="text"
+              class="form-control"
+              id="inputDirector"
+              required
+            />
           </div>
           <div class="col-12">
             <label for="inputPoster" class="form-label">Poster</label>
@@ -90,26 +95,25 @@
               class="form-control"
               id="inputPoster"
               placeholder="link imagen"
+              required
             />
           </div>
           <div class="col-md-2">
             <label for="inputYear" class="form-label">Year</label>
-            <input type="month" class="form-control" id="inputYear" />
+            <input type="month" class="form-control" id="inputYear" required />
           </div>
           <div class="col-md-2">
             <label for="inputGenero" class="form-label">Genero</label>
-            <select id="inputGenero" class="form-select">
-              <option selected>Choose...</option>
-              <option>Comedia</option>
-              <option>Terror</option>
-              <option>Action</option>
-              <option>Adventure</option>
-              <option>Fantasy</option>
-            </select>
+            <input type="text" class="form-control" id="inputGenero" required />
           </div>
           <div class="col-md-2">
             <label for="inputDuration" class="form-label">Duration</label>
-            <input type="time" class="form-control" id="inputDuration" />
+            <input
+              type="time"
+              class="form-control"
+              id="inputDuration"
+              required
+            />
           </div>
           <div class="col-md-2">
             <label for="inputRate" class="form-label">Rate</label>
@@ -119,10 +123,14 @@
               max="10"
               class="form-control"
               id="inputRate"
+              required
             />
           </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">Agregar</button>
+          <div class="col-8 mt-3">
+            <button class="btn btn-dark" type="reset">Limpiar Campos</button>
+          </div>
+          <div class="col-8">
+            <button class="btn btn-primary" type="submit">Agregar</button>
           </div>
         </form>
       </section>

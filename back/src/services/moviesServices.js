@@ -23,8 +23,8 @@ module.exports = {
       const moviesMap = peliculas.map((movie) => new pelis(movie));
 
       return moviesMap;
-    } catch (error) {
-      console.log(error.message);
+    } catch (err) {
+      throw new Error(err.message);
     }
   },
 };
