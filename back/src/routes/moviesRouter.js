@@ -3,10 +3,11 @@ const {
   controladorMovies,
   postearMovies,
 } = require("../controllers/moviesControllers");
+const validarMovie = require("../middlewares/validarPeliculas");
 
 const moviesRoute = Router();
 
 moviesRoute.get("/", controladorMovies);
-moviesRoute.post("/", postearMovies);
+moviesRoute.post("/", validarMovie, postearMovies);
 
 module.exports = moviesRoute;

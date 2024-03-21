@@ -1,5 +1,5 @@
 const app = require("./src/server");
-const conexionDB = require("./config/conDb");
+const conexionDB = require("./src/config/conDb");
 
 const puerto = 3000;
 
